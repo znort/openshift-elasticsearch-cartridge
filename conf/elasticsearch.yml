@@ -141,6 +141,7 @@ node.name: ${OPENSHIFT_GEAR_UUID}
 # Path to directory containing configuration (this file and logging.yml):
 #
 # path.conf: /path/to/conf
+path.conf: ${OPENSHIFT_ELASTICSEARCH_DIR}/conf
 
 # Path to directory where to store index data allocated for this node.
 #
