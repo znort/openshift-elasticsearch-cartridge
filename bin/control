@@ -37,7 +37,7 @@ function _install_scripts()
 {
 	echo "Installing scripts..."
 	mkdir -p $OPENSHIFT_ELASTICSEARCH_DIR/conf/scripts
-	cp -Rf $OPENSHIFT_REPO_DIR/conf/scripts/* $OPENSHIFT_ELASTICSEARCH_DIR/conf/scripts/
+	cp -Rf $OPENSHIFT_REPO_DIR/scripts/* $OPENSHIFT_ELASTICSEARCH_DIR/conf/scripts/
 }
 
 function _is_running() {
