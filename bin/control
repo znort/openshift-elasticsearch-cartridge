@@ -33,6 +33,13 @@ function _install_plugins()
   fi
 }
 
+function _install_scripts()
+{
+	echo "Installing scripts..."
+	mkdir -p $OPENSHIFT_ELASTICSEARCH_DIR/conf/scripts
+	cp -Rf $OPENSHIFT_REPO_DIR/conf/scripts/* $OPENSHIFT_ELASTICSEARCH_DIR/conf/scripts/
+}
+
 function _is_running() {
   if [ -f $PID_FILE ]; then
     local zpid=$(cat $PID_FILE 2> /dev/null)
@@ -96,6 +103,7 @@ function status() {
 
 function deploy() {
    _install_plugins
+   _install_scripts
 }
 
 case "$1" in
