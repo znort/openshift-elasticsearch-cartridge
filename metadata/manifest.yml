@@ -45,7 +45,7 @@ Endpoints:
 
   - Private-IP-Name:   IP
     Private-Port-Name: TRANSPORT_PORT
-    Private-Port:      9300
+    Private-Port:      15001
     Public-Port-Name:  TRANSPORT_PROXY_PORT
 
 Source-Url: https://github.com/znort/openshift-elasticsearch-cartridge.git
